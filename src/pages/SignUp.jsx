@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
@@ -13,7 +13,7 @@ import Alert from 'react-bootstrap/Alert';
 
 const SignUp = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
